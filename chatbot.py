@@ -9,7 +9,7 @@ class Chatbot(irc.bot.SingleServerIRCBot):
     prefix = '#'
 
     def __init__(self, token):
-        super().__init__([("irc.chat.twitch.tv", 6667, f'oauth:{token}')], "cx0mir4d", "cx0mir4d")
+        super().__init__([("irc.chat.twitch.tv", 6667, f'oauth:{token}')], "dummy", "dummy")
 
     def on_welcome(self, connection, event):
         print("on_welcome()")
